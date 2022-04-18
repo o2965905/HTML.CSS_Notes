@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今天是4月7日</title>
+    <!--使用外部CSS-->
+    <!--外部CSS需在同一個資料夾內-->
+    <link rel="stylesheet" href="040701.css">
+    <style>
+        /*改變標籤顏色/大小/陰影*/
+        h3 {
+            color: brown;
+            font-size: 36px;
+            text-shadow: 5px 5px 2px black;
+        }
+
+        /*更改背景顏色*/
+        body {
+            background: #ffbda3;
+        }
+
+        /*更改h1顏色*/
+        h1 {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        /*更改第一行顏色*/
+        p::first-line {
+            color: slateblue;
+        }
+
+        /*更改ol的顏色*/
+        ol li {
+            color: blueviolet;
+        }
+
+        /*更改ul+P的大小*/
+        ul+p {
+            font-size: 2em;
+        }
+
+        /*給表格添加邊框*/
+        table,
+        th,
+        td {
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <!--CSS顏色更改-->
+    <div>
+        <h1 style="color: blueviolet;">今天教CSS</h1>
+        <h2 style="color: navy;">更改CSS顏色</h2>
+        <h3>這是h3</h3>
+        <hr>
+        <!--CSS位置更改-->
+    </div>
+    <h2 style="color:brown;text-align:center;">CSS位置(置中)</h2>
+    <h2 style="color:brown;text-align:right;">CSS位置(靠右)</h2>
+    <h2 style="color:brown;text-align:left;">CSS位置(靠左)</h2>
+    <hr>
+    <div>
+        <div>
+            <ul>
+                <li>早上</li>
+                <li>中午</li>
+                <li>晚上</li>
+            </ul>
+            <!--兄弟選擇器ul+P-->
+            <P>ul+p的測試</P>
+            <hr>
+        </div>
+        <div>
+            <p>
+                今天星期一;<br>
+                明天星期二;<br>
+                後天星期三;<br>
+
+            </p>
+            <hr>
+        </div>
+        <div>
+            <ol>
+                <li>第一名</li>
+                <li>第二名</li>
+                <li>第三名</li>
+            </ol>
+            <hr>
+        </div>
+</body>
+
+</html>

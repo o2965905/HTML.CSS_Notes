@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>040704</title>
+    <style>
+        h1 {
+            background-color: rgb(183, 169, 169);
+            width: 150px;
+            border: 1px solid rgb(41, 18, 18);
+            text-align: center;
+        }
+
+        h3 {
+            color: rgb(183, 99, 99);
+            background-color: khaki;
+            width: 100px;
+            text-align: center;
+            border: 1px solid rgb(183, 99, 99);
+        }
+
+        .list-name {
+            color: rgb(91, 91, 204);
+            font-size: 2em;
+        }
+
+        .list {
+            color: palevioletred;
+        }
+
+        .food {
+            color: rgb(15, 179, 143);
+        }
+
+        #header {
+            color: blueviolet;
+        }
+
+        #header2 {
+            color: indianred;
+        }
+    </style>
+</head>
+<br>
+
+<body>
+    <h1>class vs id</h1>
+    <h3>this is class </h3>
+    <div class="list">one</div>
+    <div class="list">two</div>
+    <div class="list">three</div>
+    <div class="food">four</div>
+    <div class="food">five</div>
+    <div class="list-name">five.five</div>
+    <!--如果疊加三個class,顏色會呈現靠近內容的-->
+    <!--最靠近內容是"food"-->
+    <div class="list-name list food">five.five.five</div>
+    <h3>this is id</h3>
+    <div id="header">six</div>
+    <div id="header">seven</div>
+    <div id="header2">eight</div>
+
+</body>
+
+</html>

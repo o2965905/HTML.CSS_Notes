@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>040703</title>
+    <h3>更改回首頁按鈕</h3>
+    <style>
+        /*更改回首頁按鈕*/
+        a {
+            /*增加外框*/
+            border: 1px solid gray;
+            /*更改顏色*/
+            color: green;
+            background-color: lemonchiffon;
+            /*更改字體*/
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /*加內距*/
+            padding: 6px;
+            /*加邊距(外距)*/
+            margin: 1em;
+            /*更改圓框*/
+            border-radius: 6em;
+            /*增加立體感(使用陰影)*/
+            box-shadow: 2px 2px 2px goldenrod;
+            /*文字底線*/
+            text-decoration: none;
+        }
+
+        div {
+            /*更改四個外框顏色,製作立體感*/
+            border-top: 10px solid black;
+            border-right: 10px solid #999;
+            border-bottom: 10px solid #bbb;
+            border-left: 10px solid #555;
+            width: 100px;
+            /*更改鼠標樣式*/
+            cursor: pointer;
+            /*字體置中*/
+            text-align: center;
+            /*更改字體*/
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        div:active {
+            border-top: 9px solid black;
+            border-right: 9px solid #999;
+            border-bottom: 9px solid #bbb;
+            border-left: 9px solid #555;
+            background-color: white;
+        }
+
+        div:hover {
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="040701.html">back to 040701</a>
+    <a href="040702.html">back to 040702</a>
+    <br>
+    <br>
+    <br>
+    <h3>更改test立體感</h3>
+    <div>test</div>
+    <br>
+    <br>
+    <br>
+    <h3>行內模式</h3>
+    <!--不會占滿一行,橫著呈現-->
+    <span>one</span><span>two</span><span>three</span>
+    <a>one</a><a>two</a><a>three</a>
+    <h3>盒子模式</h3>
+    <!--會佔滿整行,直的呈現-->
+    <article>one</article>
+    <article>two</article>
+    <article>three</article>
+    <p>one</p>
+    <p>two</p>
+    <p>three</p>
+</body>
+
+</html>
