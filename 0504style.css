@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* header */
+header{
+    width: 100%;
+    /*height: 200px;*/
+    padding: 80px 0;
+    background-image: url('https://picsum.photos/id/128/1920/1024');
+    background-size: cover;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* flex container */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* flex items */
+.col{
+    border: 1px solid lightseagreen;
+    width: calc(100% / 3);
+    /* width: 33.333%; */
+    /* width: calc(100% / 3); */
+    /* margin-right: 10px; */
+    box-shadow: 0px 5px 8px rgba(0,0,0,0.4);
+    margin: 15px 15px;
+    padding: 20px 20px;
+    border-radius: 8px;
+}
+
+/* css media query */ 
+/* 功能:針對不同的裝置，給予不同的樣式設定 */
+/* 語法:
+    @media 媒體類型 and (判斷式) {
+    CSS Code寫在此;} */
+/* 手機 → 768px以下 */
+/* 平板 → 768px ~ 992px 區間 */
+/* 普通電腦版 → 992px ~1200px 區間 */
+/* 高清電腦版 → 1200px以上 */
+
+
+/* 假設_是手機的版面:h1呈現紅色 */
+@media (max-width:576px){
+    header{
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1{
+        color:red;
+        text-align: center;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        height: 80vh;
+    }
+    .col{
+        /*flex-basis: 100vh;*/
+        /*flex-basis:100%*/
+        flex-basis:calc(100% / 3);
+        /*margin-bottom: 10px;*/
+        /*width: 100%;*/
+    }
+}
+
+/* 假設_是平板的版面:h1呈現藍色 */
+@media (min-width:577px) and (max-width:991px){
+    h1{
+        color:blue;
+        text-align: center;
+    }
+    .col{
+        flex-basis: 50%;
+    }
+}
+
+/* 假設_是電腦的版面:h1呈現綠色 */
+@media (min-width:992px) and (max-width:2000px){
+    h1{
+        color:green;
+        text-align: center;
+    }
+    .col{
+        flex-basis: 50%;
+    }
+}

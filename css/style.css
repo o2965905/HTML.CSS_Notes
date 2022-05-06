@@ -1,0 +1,161 @@
+/* 第一步先初始化 */
+*{
+    box-sizing: border-box;
+    font-family: '標楷體';
+    overflow: hidden;
+}
+
+/*設定 body */
+.main{
+    display: flex;
+    width: 1024px;
+    padding: 0 12px;
+    margin: 10px auto;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* 畫框線 border */
+/*我在 body區域 裡,除了 aside 和 section ,其他都畫上框線*/
+body>*:not(aside,section),
+aside>*,
+section>*{
+    border: 1px solid lightgray;
+}
+/*等同於以下語法*/
+/*.top, .menu, .update, .marquee, .content, .footer,{
+    border: 1px solid lightgray;
+}*/
+
+
+/*設定 body 裡面 top */
+.top{
+    flex-basis: 1000px;
+    height: 65px;
+    /* border:1px solid lightgray; 由 border 設定框線*/
+}
+
+
+/* 設定 左邊(aside) 區塊 */
+/* 設定 body 裡面的 aside */
+.aside{
+    flex-basis: 215px;
+    height: calc(768px - 65px - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* 設定 aside 裡面的 menu */
+.menu{
+    /*這裡的flex-basis 取決於aside設定的flex-direction方向*/
+    /*因為aside設定的flex-direction是(colum)垂直方向*/
+    /*所以menu裡的flex-basis會決定height的高度*/
+    /*語法 : flex-basis: calc(100% -25px)=總高度(100%)-update高度(25px)*/
+    flex-basis: calc(100% - 25px);
+    
+}
+/* 設定 menu 裡的社團介紹 */
+.menu-header{
+    font-weight: 500;
+    font-size: 24px;
+    color: #ff00ff;
+    margin: 20px auto;
+    text-decoration: underline;
+
+    /* 修改下底線顏色 : 黑色 */
+    text-decoration-color: #000000;
+    /* 修改下底線偏移位置 */
+    text-underline-offset: 5px;
+    padding: 10px;
+}
+
+/* 設定 menu 裡的超連結 */
+/* 語法 .menu>a = menu的下一層a */
+/* 大於是指下一層做變化 */
+.menu>a{
+    /* inline-block 不可斷行,可以設定 width 和 height */
+    display: inline-block;
+    /* block 可以斷行,可以設定 width 和 height */
+    /* block + margin-bottom = inline-block 用法 */
+    /* display:block;*/
+    /* margin:10px auto; */
+    /* margin-bottom:10px;*/
+
+    text-decoration: none;
+    width: 200px;
+    height: 35px;
+
+    line-height: 35px;
+    /* line-height 也可以改用 padding-top 設定 */
+    /*padding-top: 8px;*/
+
+    color: #000000;
+    font-size: 16px;
+
+    /*background-image: url("../images/menu1.png");*/
+    /*background-repeat: no-repeat;*/
+    /* 縮寫版 */
+    background: url("../images/menu1.png") no-repeat;
+}
+
+/* 滑鼠移上去,更換成背景圖片menu2 */
+.menu>a:hover{
+    background: url("../images/menu2.png");
+}
+#menu1{
+    text-decoration: underline;
+    color: #0000ff;
+}
+/* 設定 aside 裡面的 update */
+.update{
+    flex-basis: 25px;
+    font-family: '標楷體';
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* 設定 右邊(section) 區塊*/
+/* 設定 body 裡面的 section */
+.section{
+    /* 因為右側(.section)的高度跟左側(.aside)一樣高 */
+    /* 所以這裡吃左側(.aside)裡的高度,因此不設定*/
+    /* 也可以自行設定 height 數值 */
+    flex-basis: calc(1000px - 215px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* 設定 section 裡面的 marquee */
+.marquee{
+    flex-basis: 29px;
+    /* 不讓跑馬燈太貼近社團介紹,可以做或不做 */
+    padding: 0 calc((100% - 770px - 2px) / 2);
+    font-family: '標楷體';
+    font-size: 24px;
+    color: #0000ff;
+}
+
+/* 設定 section 裡面的 content */
+.content{
+    flex-basis: calc(100% - 29px);
+}
+
+/* 設定 content 裡面置入的 main.html */
+.content>iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 設定 body 裡面的 footer */
+.footer{
+    flex-basis: 1000px;
+    height: 20px;
+    font-family: '標楷體';
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+}

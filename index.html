@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國立科技高中-校園社團介紹網</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<!--這是 body -->
+
+<body class="main">
+
+
+    <!--top 開始-->
+    <!--網站標題 區塊-->
+    <header class="top">
+        <!-- alt = 當網站破圖,會出現的替代文字 -->
+        <!-- 超連結裡面包圖片 -->
+        <a href="./index.html">
+            <img src="./images/logo.png" alt="國立科技高中-校園社團介紹網">
+        </a>
+    </header>
+    <!--top 結束-->
+
+
+    <!--左邊 開始-->
+    <!--這邊包含兩個區塊:社團介紹,日期更新--->
+    <aside class="aside">
+
+        <!--社團介紹-->
+        <nav class="menu">
+            <!--特殊字體-->
+            <div class="menu-header">
+                社團介紹
+            </div>
+
+            <!--吉他社的超連結裡+入一個 target="myMain"-->
+            <!--target="myMain" 由 section 裡的 content 置入的 iframe 設定一個 name="myMain"-->
+            <!--讓 吉他社超連結 點進去後,置入的 main.html 可以在 content 呈現-->
+            <a href="./guitar_history.html" target="myMain" id="menu1">吉他社</a>
+            <a href="#">熱舞社</a>
+            <a href="#">棒球社</a>
+            <a href="#">羽球社</a>
+            <a href="#">足球社</a>
+            <a href="#">童軍社</a>
+        </nav>
+
+        <!--日期更新-->
+        <footer class="update">
+            最近更新日期 : 2022/04/21
+        </footer>
+
+    </aside>
+    <!--左邊 結束-->
+
+
+    <!--右邊 開始-->
+    <!--這邊包含兩個區塊:跑馬燈,網頁內容 區塊-->
+    <section class="section">
+
+        <!--跑馬燈-->
+        <header class="marquee">
+            <marquee>歡迎光臨校園社團介紹網，參觀後請支持社團活動並熱烈參與</marquee>
+        </header>
+
+        <!--網頁內容-->
+        <main class="content">
+            <!--置入外部連結 : iframe 語法-->
+           <iframe src="./main.html" frameborder="0" name="myMain"></iframe>
+        </main>
+
+    </section>
+    <!--右邊 結束-->
+
+
+    <!--footer 開始-->
+    <!--頁尾版權 區塊-->
+    <footer class="footer">
+        網頁設計及維護 : 019 劉奕姍
+    </footer>
+    <!--footer 結束-->
+</body>
+
+</html>

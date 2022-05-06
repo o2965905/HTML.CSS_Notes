@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--display用法-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            /*display: flex: ;*/
+            background-color:rgb(19, 16, 19);
+        }
+        .flex-container>div{
+            /*把 block 轉換成 inline 特性*/
+            /*display: inline;*/
+            background-color: rgb(92, 91, 89);
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        div{
+            background-color: bisque;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>create a flex container</h1>
+
+    <div class="flex-container">
+        <a href="">a1</a>
+        <a href="">a2</a>
+        <a href="">a3</a>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+.flex-container {
+  display: flex;
+
+  /*元素顯示方向*/
+  /*row = 橫向*/
+  /*col(column) = 縱向*/
+  flex-direction: row;
+
+  /*flex-wrap = 元素顯示堆疊方向*/
+  /*nowrap = 不換行*/
+  /*wrap = 可換行,堆疊*/
+  flex-wrap: wrap;
+
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  height: 400px;
+  /*margin: 10px;
+  padding: 20px;*/
+  border: 1px solid black;
+  font-size: 30px;
+  /*width: 300px;*/
+  width: calc(100% /3);
+}
+</style>
+</head>
+<body>
+
+<h1>Create a Flex Container</h1>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>  
+  <div>5</div>  
+  <div>6</div>  
+  <div>6</div>  
+  <div>6</div>  
+  <div>6</div>  
+    
+</div>
+
+<p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+
+<p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+
+</body>
+</html>

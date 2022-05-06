@@ -1,0 +1,51 @@
+/*boxstyle.css*/
+
+*{
+box-sizing : border-box;
+/*content-box = 預設*/
+/*box-sizing : content-box;*/
+/*以上只能從中套用一個設定=> content-box 或 box-sizing */
+}
+h3{
+    color: rgb(39, 198, 145);
+}
+.box1{
+    border: 5px solid rgb(225, 55, 55);
+    width: 400px;
+    height: 300px;
+    background-color: rosybrown;
+
+    /*padding-top,數字越大,內容物越往下推*/
+    /*padding-top: 60px;*/
+    /*padding-left,數字越大,內容物越往右推*/
+    /*padding-left: 200px;*/
+    /*padding-right,數字越大,內容物越往左推*/
+    /*padding-right: 100px;*/
+    /*padding-bottom,數字越大,內容物越往上推*/
+    /*padding-bottom: 100px;*/
+
+    /*向內推 = 向物件推*/
+    padding: 30px;
+    /*向外推*/
+    margin: 60px;
+
+}.box2{
+    border: 5px solid rgb(40, 125, 40);
+    width: 400px;
+    height: 300px;
+    background-color: rgb(153, 209, 153);
+    
+    /*padding-top,數字越大,內容物越往下推*/
+    /*padding-top: 60px;*/
+    /*padding-left,數字越大,內容物越往右推*/
+    /*padding-left: 200px;*/
+    /*padding-right,數字越大,內容物越往左推*/
+    /*padding-right: 100px;*/
+    /*padding-bottom,數字越大,內容物越往上推*/
+    /*padding-bottom: 100px;*/
+    /*向內推 = 向物件推*/
+    padding: 30px;
+    /*水平置中*/
+    margin: auto;
+
+}

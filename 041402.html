@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--選擇器使用教學-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+    <!--下面四個舉例,長很像,但都是不同對應*/
+    /*
+    div , h3
+    div h3
+    div + h3
+    div.h3
+    -->
+    <style>
+        /*  使用「*」是選擇畫面上的所有元素*/
+        /*  不用特別呼應,整個都會變更套用*/
+        /* * {
+            color: aquamarine;
+        } */
+
+        /* h1,h2,h3,h4,p,a */
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        a {
+            color: rgb(189, 37, 37);
+        }
+
+        /* 指定.myClass變色 */
+        .myclass1,
+        .myclass2 {
+            color: rgb(218, 128, 64);
+        }
+
+        /* 大於 */
+        div>p {
+            color: yellow;
+        }
+
+        /*空格  所有的p*/
+        .spaceClass p {
+            color: green;
+        }
+
+        /* div + p */
+        .addClass + p {
+            color: blue;
+        }
+
+        /* div ~ p*/
+        .addClass~p {
+            color: rgb(148, 7, 208);
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <h3> * =所有層變色(紅色)</h3>
+    <!-- * 和 class -->
+    <h1>* =所有層變色</h1>
+    <h2>* =所有層變色</h2>
+    <h3>* =所有層變色</h3>
+    <h4>* =所有層變色</h4>
+    <hr>
+    <h3>.myclass 變色(橙色)</h3>
+    <h3 class="myclass1">.myclass 變色</h3>
+    <h4 class="myclass2">.myclass 變色</h4>
+    <hr>
+    <h3>div > p(黃色)</h3>
+    <!-- div > p , div內,第一層,所有的p-->
+    <div>
+        <ul>
+            <li>
+                <p>div > p (這層被套用到「*」的變色)</p>
+            </li>
+        </ul>
+        <P>div > p</P>
+        <P>div > p</P>
+        <P>div > p</P>
+        <P>div > p</P>
+    </div>
+    <hr>
+    <h3>div 空格 p(綠色)</h3>
+    <div class="spaceClass">
+        <ul>
+            <li>
+                <p>div 空格 p</p>
+                <p>div 空格 p</p>
+                <p>div 空格 p</p>
+            </li>
+        </ul>
+        <p>div 空格 p</p>
+        <p>div 空格 p</p>
+        <p>div 空格 p</p>
+        <p>div 空格 p</p>
+    </div>
+    <hr>
+    <h3>div + p(藍色)</h3>
+    <div class="addClass">
+        <p>div + p</p>
+        <p>div + p</p>
+        <p>div + p</p>
+    </div>
+    <hr>
+    <h3>div ~ p(紫色)</h3>
+    <div class="qqqClass">
+        <p>div ~ p</p>
+        <p>div ~ p</p>
+        <p>div ~ p</p>
+    </div>
+    <p>div ~ p兄弟層</p>
+    <p>div ~ p兄弟層</p>
+    <p>div ~ p兄弟層</p>
+    <hr>
+
+
+</body>
+
+</html>

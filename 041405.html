@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--同一層兩個連接,做效果-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:hover {
+            color: palevioletred
+        }
+
+        .none {
+
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body><h1>當同一層有兩個連結,要指定一條連結做css效果</h1>
+    <div>
+        <h2>Internal版本</h2>
+        <a href="#">預設有底線</a>
+        <br>
+        <a class="none" href="#">寫在內部</a>
+    </div>
+    <div>
+        <h2>Inline版本</h2>
+        <a href="#">預設有底線</a>
+        <br>
+        <a style="text-decoration: none;" href="#">寫在行內</a>
+    </div>
+
+
+</html>

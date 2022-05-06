@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <style>
+        body {
+            font-size: 80%;
+            font-family: 'Courier New', Courier, monospace;
+            /* 字體間距離 */
+            letter-spacing: 0.15em;
+            background-color: #efefef;
+        }
+        /* id 在css中使用「#」; class 在css中使用「.」*/
+        /* 因為下面 page 是用 id ,所以使用「#」*/
+        #page{
+            max-width: 940px;
+            min-width: 720px;
+            /* vh = view height ;螢幕可視範圍高度的百分比 */
+            /* vw = view width ;螢幕可視範圍寬度的百分比 */
+            height: 90vh;
+            /* margin = 向外推*/
+            margin: 10px auto 10px auto;
+            /* padding = 向內縮*/
+            padding: 20px;
+            border: 4px double #000;
+            background-color: #ffffff;
+
+        }
+        #logo{
+            width: 150px;
+            margin: 10px auto;
+
+        }
+        ul{
+            width: 570px;
+            padding: 15px;
+            margin: 0px auto;
+            text-align: center;
+            border-top: 2px solid black;
+            border-bottom: 1px solid black;
+        }
+        li{
+            display: inline;
+            margin: 0px 5px;
+        }
+        /* text-decoration = 文字裝飾 */
+        /* text-transform = 控制文字大小寫 */
+        a{
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 6px 5px 5px 5px;
+
+        }
+        p{
+            width: 600px;
+            text-align: justify;
+            font-weight: normal;
+            margin: 20px auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <div id="logo">
+            <img src="./logo.gif" alt="logo">
+        </div>
+        <!--Home for sale repairs about contact -->
+        <!--用 ul > li 呈現 -->
+        <!--navigation = 導覽頁-->
+        <ul id="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">for sale</a></li>
+            <li><a href="#">repairs</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <p>
+            <img src="./keys.jpg" alt="keys">
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi necessitatibus, ullam est amet tenetur
+            inventore fuga dicta quisquam provident, labore id, in eius. Praesentium, quae?
+        </p>
+    </div>
+
+</body>
+
+</html>

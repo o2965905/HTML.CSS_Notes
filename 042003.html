@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景圖片:background常用用法</title>
+</head>
+<style>
+    .box1{
+        margin: 0 auto;
+        background-image: url(./castle.jpg);
+        width: 800px;
+        height: 600px;
+        background-color: aquamarine;
+
+        /*background-attachment = 背景固定模式的屬性*/
+        /*scroll = 隨頁面滾動而移動*/
+        /*fixed = 固定不會動*/
+        /*local = 隨區塊滾動而移動*/
+        /*background-attachment: scroll;*/
+        
+        /*background-size = 背景圖片大小*/
+        /*auto = 原圖*/
+        /*cover = 填滿*/
+        /*contain = 背景圖縮小至內容的大小 */
+        background-size: contain;
+
+        /*背景圖片位置*/
+        background-position: center;
+
+        /* 圖片重複載入:no-repeat(不重複) */
+        /* 圖片重複載入:repeat-x(橫向的重複) */
+        /* 圖片重複載入:repeat-y(縱向的重複) */
+        background-repeat: no-repeat;
+
+        /* 透明度:方法1 */
+        /*opacity: 0.3;*/
+        /* 透明度:方法2 */
+        /*background: rgba(0,128,0,0.8);*/ 
+
+        
+    }
+</style>
+<body>
+    <div class="box1">
+      
+    </div>
+    
+    
+</body>
+</html>
