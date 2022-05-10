@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 750px;
+            color: cornflowerblue;
+        }
+        p{
+            width: 230px;
+            float: left;
+            margin: 5px;
+            padding: 5px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        /* float 後面加 clear ,讓排版比較整齊 */
+        /* p2 文字段落比較長，占用版面大，造成p4排版亂掉 */
+        /* 在p4段落加上 clear ，讓排版變整齊 */
+        .clear{
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>float test</h1>
+    <p>
+        p1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus asperiores fuga, consequatur totam minima
+        laborum!
+    </p>
+    <p>
+        p2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus asperiores fuga, consequatur totam minima
+        laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus asperiores fuga, consequatur totam minima
+        laborum!
+    </p>
+    <p>
+        p3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus asperiores fuga, consequatur totam minima
+        laborum!
+    </p>
+    <p class="clear">
+        p4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus asperiores fuga, consequatur totam minima
+        laborum!
+    </p>
+    <p>
+        p5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus asperiores fuga, consequatur totam minima
+        laborum!
+    </p>
+    <p>
+        p6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus asperiores fuga, consequatur totam minima
+        laborum!
+    </p>
+</body>
+
+</html>
