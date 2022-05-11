@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html 0511 上課內容-part2</title>
+    <style>
+        .img-right {
+            margin: 10px;
+            float: right;
+        }
+
+        .img-left {
+            margin: 10px;
+            float: left;
+        }
+
+        div {
+            font-family: Papyrus;
+            color: darkslategray;
+            /*overflow: auto;*/
+            margin-bottom: 20px;
+
+        }
+
+        .box1 {
+            border: 1px solid rgb(190, 83, 83);
+            background-color: rgb(248, 206, 212);
+            /*height: 500px;*/
+        }
+
+        /* css 將 .clearfix 以偽元素 ::after 處理*/
+        /* ::after 藉此在 box1 元素最後方新增內容區塊 */
+        .clearfix::after {
+            /* 1. 新增::after */
+            /* 2. 新增 content , 要加上雙引號 "" */
+            /* 3. 新增 display , 可用 table 或 block */
+
+            content: "偽元素一定要具備 content 的屬性，就算是只有 content:"" 也可以，因為沒有 content 的偽元素是不會出現在畫面上的"; /* "" 內容為隱形,不加 "" 就不會產生區塊 */
+            clear: both; /* 清除帶有浮動的屬性 */
+            display: table; /* 添加﹝區塊﹞屬性,也可用 block 代替 */
+            height: 40px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        /* 補充: ::after,是css偽元素的一種*/
+        /* css偽元素是指它並不是真正的網頁元素，而是可以透過 CSS 來操控，表現出網頁元素的相關行為，像是新增內容*/
+        /* 同時偽元素也會「繼承」原本元素的屬性，如果原本文字是黑色，偽元素的文字也會是黑色。 */
+        /* 功能:只要將 clearfix 加入想清除浮動元素的父元素的 class 中就能達成 */
+        /* 這次範例是加在 <div class="box1 clearfix"> 裡 */
+    </style>
+</head>
+
+<body>
+
+    <div class="box1 clearfix">
+        <img class="img-right" src="https://picsum.photos/id/1055/200/300" alt="">
+        <img class="img-left" src="https://picsum.photos/seed/picsum/200/300" alt="">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi maxime vitae ullam alias illo blanditiis,
+        obcaecati ut perspiciatis inventore quaerat numquam sint aspernatur laudantium consequuntur illum accusantium
+        animi ipsam quasi? Delectus, ad consectetur. Vero temporibus labore dolores repudiandae omnis porro voluptatibus
+        perferendis quibusdam itaque nihil quaerat pariatur illum eaque debitis corrupti laborum, quidem nesciunt
+        aliquid magnam ratione doloribus, placeat ut sapiente. Ducimus laborum illo eligendi maxime fuga tenetur iure,
+        nisi explicabo recusandae nam modi saepe, et nesciunt a fugiat dolore! Tenetur est in quaerat reiciendis error,
+        natus et repudiandae facere molestias odit nisi architecto temporibus officia. Nulla ea modi delectus.
+    </div>
+
+</body>
+
+</html>

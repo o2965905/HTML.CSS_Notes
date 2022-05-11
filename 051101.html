@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 0511 上課內容-part1</title>
+    <style>
+        /* 加入float屬性,讓圖片浮起來*/
+        /* float:right 圖片會靠右 */
+        .img-right {
+            margin: 10px;
+            float: right;
+        }
+        /* float:left 圖片會靠左*/
+        .img-left {
+            margin: 10px;
+            float: left;
+        }
+
+        div {
+            color: lightslategrey;
+            border: 3px solid lightseagreen;
+            margin-bottom: 20px;
+
+            /* 在 div 裡,如果 img 跑出 border */
+            /* 解決方法1: 使用overflow:auto */
+            overflow: auto;
+            /* 解決方法2: 使用display:inline-block */
+            /*display: inline-block;*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <img class="img-right" src="https://picsum.photos/id/1015/200/300" alt="">
+        <img class="img-left" src="https://picsum.photos/seed/picsum/200/300" alt="">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi maxime vitae ullam alias illo blanditiis,
+        obcaecati ut perspiciatis inventore quaerat numquam sint aspernatur laudantium consequuntur illum accusantium
+        animi ipsam quasi? Delectus, ad consectetur. Vero temporibus labore dolores repudiandae omnis porro voluptatibus
+        perferendis quibusdam itaque nihil quaerat pariatur illum eaque debitis corrupti laborum, quidem nesciunt
+        aliquid magnam ratione doloribus, placeat ut sapiente. Ducimus laborum illo eligendi maxime fuga tenetur iure,
+        nisi explicabo recusandae nam modi saepe, et nesciunt a fugiat dolore! Tenetur est in quaerat reiciendis error,
+        natus et repudiandae facere molestias odit nisi architecto temporibus officia. Nulla ea modi delectus.
+    </div>
+    <div>
+        <img class="img-right" src="https://picsum.photos/id/1019/200/300" alt="">
+        <img class="img-left" src="https://picsum.photos/id/1016/200/300" alt="">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi maxime vitae ullam alias illo blanditiis,
+        obcaecati ut perspiciatis inventore quaerat numquam sint aspernatur laudantium consequuntur illum accusantium
+        animi ipsam quasi? Delectus, ad consectetur. Vero temporibus labore dolores repudiandae omnis porro voluptatibus
+        perferendis quibusdam itaque nihil quaerat pariatur illum eaque debitis corrupti laborum, quidem nesciunt
+        aliquid magnam ratione doloribus, placeat ut sapiente. Ducimus laborum illo eligendi maxime fuga tenetur iure,
+        nisi explicabo recusandae nam modi saepe, et nesciunt a fugiat dolore! Tenetur est in quaerat reiciendis error,
+        natus et repudiandae facere molestias odit nisi architecto temporibus officia. Nulla ea modi delectus.
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html 0511 上課內容-part3</title>
+    <style>
+        .img-left {
+            margin: 10px;
+            float: left;
+        }
+
+        /*
+            1.clear:left 只清除左邊浮動效果
+            2.clear:right 只清除右邊浮動效果
+            3.clear:both 清除全部的浮動效果 -> 通常直接採用這個方法處理
+        */
+        .clear-item{
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        1.float left
+        2.float left
+        3.div clear both
+        4.float left
+    -->
+
+        <img class="img-left" src="https://picsum.photos/id/1037/200/300" alt="">
+        <img class="img-left" src="https://picsum.photos/id/1038/200/300" alt="">
+        <div class="clear-item"></div>
+        <img class="img-left" src="https://picsum.photos/id/1036/200/300" alt="">
+        
+
+</body>
+
+</html>

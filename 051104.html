@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html 0511 上課內容-綜合練習</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        body {
+            width: 960px;
+        }
+
+        .container {
+            text-align: center;
+            margin: 10px;
+            margin-top: 50px;
+        }
+
+        .clear-fix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .box {
+            width: 280px;
+            height: 200px;
+            /* 使用 float 效果來排版 */
+            float: left;
+            margin-right: 20px;
+            margin-top: 50px;
+            padding: 80px 0;
+            /* 也可以使用 display:flex 達到排版效果 */
+            /* 但 display:flex 和 float 效果,選一種就好 */
+            /*
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            */
+        }
+
+        .box1 {
+            background-color: lightblue;
+        }
+
+        .box2 {
+            background-color: lightpink;
+           
+        }
+
+        .box3 {
+            background-color: rgb(185, 242, 185);
+            /*float: right;
+            margin-right: 0;*/
+        }
+    </style>
+</head>
+
+<body>
+    <h3>float box</h3>
+    <div class="container clear-fix">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+    </div>
+    <div class="container clear-fix">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+    </div>
+</body>
+
+</html>

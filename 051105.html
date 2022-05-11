@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>綜合練習</title>
+    <style>
+        /* 先初始化網頁 */
+        * {
+            box-sizing: border-box;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        /* container 用來包東西,由內容的多寡來把高度撐高*/
+        .container {
+            width: 960px;
+            background-color: linen;
+        }
+
+        .container::after{
+            clear: both;
+            content: "";
+            display: block;
+        }
+
+        /* 三個區塊的設定 */
+        .col {
+            width: 300px;
+            background-color: rgb(248, 249, 249);
+            font-family: Papyrus;
+            color: lightslategray;
+            /* 向左浮動 */
+            float: left;
+            /* 
+                1.margin=向外推
+                2.padding=向內推
+            */
+            margin: 10px;
+            /* 增加陰影 */
+            box-shadow: 0px 5px 8px rgba(0,0,0,0.4);
+            /* 外框修飾圓弧狀 */
+            border-radius: 8px;
+            
+        }
+
+        .col img {
+            /* 
+                1.因為 col 設定 width:300px
+                2.這裡 width:100% 只會填滿 300px 範圍
+            */
+            width: 100%;
+        }
+        .col>h3{
+            margin: 10px;
+            /* 文字設定位置:center(置中) */
+            text-align: center;
+            font-weight: bold;
+        }
+        .col>p{
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="col">
+            <img src="https://picsum.photos/id/1011/250/150" alt="">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt assumenda quia laudantium
+                fugiat deserunt similique dolorum reprehenderit, eum animi nihil deleniti sunt dolorem ipsa atque. Ea
+                id, iste enim fugit, sit omnis error suscipit, aut nisi deserunt neque ut ab vitae eligendi corporis.
+                Fugiat cumque molestias dignissimos! Provident, ad!
+            </p>
+        </div>
+        <div class="col">
+            <img src="https://picsum.photos/id/1012/250/150" alt="">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt assumenda quia laudantium
+                fugiat deserunt similique dolorum reprehenderit, eum animi nihil deleniti sunt dolorem ipsa atque. Ea
+                id, iste enim fugit, sit omnis error suscipit, aut nisi deserunt neque ut ab vitae eligendi corporis.
+                Fugiat cumque molestias dignissimos! Provident, ad!
+            </p>
+        </div>
+        <div class="col">
+            <img src="https://picsum.photos/id/1013/250/150" alt="">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt assumenda quia laudantium
+                fugiat deserunt similique dolorum reprehenderit, eum animi nihil deleniti sunt dolorem ipsa atque. Ea
+                id, iste enim fugit, sit omnis error suscipit, aut nisi deserunt neque ut ab vitae eligendi corporis.
+                Fugiat cumque molestias dignissimos! Provident, ad!
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
