@@ -53,10 +53,3 @@
 * [切板練習(2):切出4大塊,4大塊又包含3小塊](051203.html)
 * [切板練習(2):老師範本-px板本](051204.html)
 * [切板練習(2):老師範本-%板本](051205.html)
-
-
-### JavaScript 動態程式語言
-* [JavaScript:「Hello world」範例程式](051106.html)
-* [JavaScript:<script>指令教學](051206.html)
-* [JavaScript:js外部置入的程式碼](051206.js)
-* [JavaScript:prompt()函式教學&練習](051207.html)
